@@ -1,0 +1,19 @@
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "d8400372-d71b-449f-b672-ae70ca3571c1", // The ID of this integration.
+        region: "us-east", // The region your integration is hosted in.
+        serviceInstanceID: "7ae322c6-47a1-4784-b02b-ddc8d9b2ad72", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+        (window.watsonAssistantChatOptions.clientVersion || 'latest') +
+        "/WatsonAssistantChatEntry.js"
+      document.head.appendChild(t);
+    });
+  </script>
+  <main class="main">
+	<div class="contenedor">
+        <h1>Ferretería "Tornillo Feliz"</h1><br>
+    <h2>Siempre brindando el mejor servicio para ti</h2><br><br>
